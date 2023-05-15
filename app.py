@@ -1,24 +1,8 @@
 from flask import Flask, jsonify, request
+from bd import livros
 
 app = Flask(__name__)
 
-livros = [
-    {
-        'id' : 1,
-        'titulo': 'Livro1',
-        'autor': 'autor 1'
-    },
-    {
-        'id' : 2,
-        'titulo': 'Livro1',
-        'autor': 'autor 1'
-    },
-    {
-        'id' : 3,
-        'titulo': 'Livro1',
-        'autor': 'autor 1'
-    }
-]
 
 #Criar uma API que permita:
 
